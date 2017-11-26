@@ -1,4 +1,4 @@
 from populate import admin, institutions
 
-admin.populate()
+# admin.populate()
 institutions.populate()

@@ -1,6 +1,10 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from .serializers import UserSerializer, GroupSerializer
+
+from .serializers import UserSerializer, GroupSerializer, InstitutionUnitSerializer
+from rest_framework import generics
+from .models import Institution, Institutions_Unit, Capacity, City
+
 
 class UserViewSet(viewsets.ModelViewSet):
     """
@@ -15,5 +19,9 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+class InstitutionUnitList(generics.ListAPIView):
+    queryset = Institutions_Unit.objects.all()
+    serializer_class = InstitutionUnitSerializer
 
 
