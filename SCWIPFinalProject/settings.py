@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backend',
     'rest_framework',
+    'snippets'
 ]
 
 MIDDLEWARE = [
@@ -79,9 +80,9 @@ WSGI_APPLICATION = 'SCWIPFinalProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'SCWIP',
-        'USER': 'gj',
-        'PASSWORD': 'as112233',
+        'NAME': 'SCWIPDB',
+        'USER': 'scwip',
+        'PASSWORD': 'scwip',
         'HOST': 'localhost',
         'PORT': '',
     }

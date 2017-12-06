@@ -1,4 +1,4 @@
-# from populate import base
+#from populate import base
 import json
 from os import walk, path
 from backend.models import Institution, City, Capacity, Institutions_Unit
@@ -71,7 +71,7 @@ def fillInstitution(dirname):
 def populate():
     print('Populating..')
     fileslist = []
-    dirname = '/Users/open159259/doc/python/csvToJson/'
+    dirname = '/Users/cytsai/finalP/workspace/SCWIPFinalProject/csvToJson/'
     filterJsonDir = 'filterJson'
     cityJson = 'city.json'
     allInit()
